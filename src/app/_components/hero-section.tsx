@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export const HeroSection = () => {
@@ -96,9 +97,9 @@ export const HeroSection = () => {
             <div className="absolute -top-4 -right-4 h-8 w-8 animate-bounce rounded-full bg-yellow-400 opacity-80"></div>
             <div className="absolute -bottom-4 -left-4 h-6 w-6 animate-pulse rounded-full bg-green-400 opacity-60"></div>
 
-            <div className="relative rounded-3xl bg-white p-8 shadow-2xl">
+            <div className="relative rounded-xl bg-white p-3 shadow-2xl">
               {/* Badge */}
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-green-600 px-4 py-1 text-sm font-semibold text-white">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-green-600 px-4 py-1 text-sm font-semibold text-white">
                 সর্বাধিক বিক্রিত
               </div>
 
@@ -106,21 +107,14 @@ export const HeroSection = () => {
                 {/* Professional milk bottle image */}
                 <div className="relative mx-auto mb-6 flex h-64 w-48 items-center justify-center">
                   {/* Professional milk bottle with realistic design */}
-                  <div className="relative h-56 w-36 rounded-t-2xl rounded-b-xl border border-slate-200 bg-gradient-to-b from-white via-slate-50 to-slate-100 shadow-2xl">
+                  <div className="relative h-48 w-44 rounded-lg border border-slate-200 bg-gradient-to-b from-white via-slate-50 to-slate-100 shadow-2xl">
                     {/* Main bottle body with realistic proportions */}
-                    <div className="absolute inset-x-2 top-4 bottom-8 rounded-t-xl rounded-b-lg bg-gradient-to-b from-white to-slate-50">
+                    <div className="absolute inset-x-2 top-4 bottom-8 rounded-t-xl rounded-b-lg">
                       {/* Glass highlights */}
                       <div className="absolute top-4 left-2 h-40 w-1 rounded-full bg-gradient-to-b from-white/80 via-white/40 to-transparent"></div>
                       <div className="absolute top-6 right-3 h-32 w-0.5 rounded-full bg-white/60"></div>
 
-                      {/* Milk content with realistic color */}
-                      <div className="absolute right-2 bottom-2 left-2 h-12 rounded-b-lg bg-gradient-to-t from-amber-100 via-white to-white/90">
-                        <div className="absolute inset-x-1 top-1 h-1 rounded-full bg-amber-200/50"></div>
-                        <div className="absolute inset-x-1 top-3 h-0.5 rounded-full bg-amber-100/30"></div>
-                      </div>
-
-                      {/* Professional label design */}
-                      <div className="absolute top-6 right-2 left-2 h-20 rounded-lg border border-slate-200 bg-white shadow-lg">
+                      <div className="absolute top-12 right-2 left-2 h-24 rounded-lg border border-slate-200 bg-white shadow-lg">
                         <div className="flex h-full flex-col items-center justify-center p-2">
                           <div className="text-center">
                             <div className="text-xs font-bold text-slate-800">
@@ -128,26 +122,19 @@ export const HeroSection = () => {
                             </div>
                             <div className="text-xs text-slate-600">খাঁটি দুধ</div>
                             <div className="mt-1 text-xs font-semibold text-green-600">১ লিটার</div>
-                            <div className="mt-1 flex items-center justify-center gap-1">
-                              <div className="h-1 w-1 rounded-full bg-green-500"></div>
-                              <div className="h-1 w-1 rounded-full bg-green-500"></div>
-                              <div className="h-1 w-1 rounded-full bg-green-500"></div>
-                            </div>
+                            <div className="mt-1 flex items-center justify-center gap-1"></div>
                           </div>
                         </div>
                       </div>
                     </div>
 
-                    {/* Professional cap design */}
-                    <div className="absolute -top-3 left-1/2 h-8 w-10 -translate-x-1/2 rounded-full bg-gradient-to-b from-slate-600 to-slate-700 shadow-lg">
-                      <div className="absolute top-1 left-1/2 h-1 w-6 -translate-x-1/2 rounded-full bg-slate-500"></div>
-                      <div className="absolute top-2 left-1/2 h-0.5 w-4 -translate-x-1/2 rounded-full bg-slate-400"></div>
-                    </div>
-
-                    {/* Professional seal */}
-                    <div className="absolute -top-1 left-1/2 h-2 w-8 -translate-x-1/2 rounded-full bg-gradient-to-b from-green-600 to-green-700">
-                      <div className="absolute top-0.5 left-1/2 h-0.5 w-6 -translate-x-1/2 rounded-full bg-green-500"></div>
-                    </div>
+                    <Image
+                      className="absolute left-1/2 -translate-x-1/2 rounded-full"
+                      src="/ml.png"
+                      height={60}
+                      width={60}
+                      alt=""
+                    />
 
                     {/* Quality indicators */}
                     <div className="absolute top-16 right-2 flex flex-col gap-1">
