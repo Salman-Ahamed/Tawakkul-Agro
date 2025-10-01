@@ -1,7 +1,9 @@
+import Image from "next/image";
+
 export const FeaturesSection = () => {
   const features = [
     {
-      icon: "🌱",
+      icon: <Image className="rounded-full" src="/ml.png" height={60} width={60} alt="milk" />,
       title: "খাঁটি দুধ",
       description: "কোনো মিশ্রণ ছাড়াই ১০০% খাঁটি গরুর দুধ",
       color: "from-green-500 to-green-600",
@@ -23,11 +25,11 @@ export const FeaturesSection = () => {
 
           {/* Professional quality badge */}
           <div className="absolute -top-2 -right-2 flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-gradient-to-b from-green-600 to-green-700 shadow-lg">
-            <span className="text-sm font-bold text-white">100%</span>
+            <span className="text-[10px] font-bold text-white">100%</span>
           </div>
 
           {/* Purity certification */}
-          <div className="absolute -bottom-1 left-1/2 flex h-4 w-12 -translate-x-1/2 items-center justify-center rounded-full bg-green-600 shadow-md">
+          <div className="absolute -bottom-1 left-1/2 flex h-5 w-12 -translate-x-1/2 items-center justify-center rounded-full bg-green-600 shadow-md">
             <span className="text-xs font-bold text-white">PURE</span>
           </div>
         </div>
@@ -59,14 +61,16 @@ export const FeaturesSection = () => {
       ),
     },
     {
-      icon: "☪️",
+      icon: (
+        <Image className="rounded-full" src="/HALAL-Logo.png" height={60} width={60} alt="milk" />
+      ),
       title: "হালাল প্রক্রিয়া",
       description: "ইসলামিক নিয়ম অনুসারে সম্পূর্ণ হালাল প্রক্রিয়ায় উৎপাদিত",
       color: "from-emerald-500 to-emerald-600",
       bgColor: "from-emerald-50 to-emerald-100",
       stats: "সম্পূর্ণ হালাল",
       visual: (
-        <div className="relative mx-auto mb-4 h-16 w-16">
+        <div className="relative mx-auto mb-4 h-16 w-16 rounded-full bg-amber-200">
           {/* Crescent moon and star */}
           <div className="absolute top-2 left-1/2 h-8 w-8 -translate-x-1/2 rounded-full border-4 border-emerald-400">
             <div className="absolute top-1 left-1 h-6 w-6 rounded-full bg-emerald-50"></div>
@@ -75,7 +79,7 @@ export const FeaturesSection = () => {
             <div className="absolute top-0.5 left-0.5 h-1 w-1 rounded-full bg-yellow-300"></div>
           </div>
           {/* Halal certification badge */}
-          <div className="absolute -bottom-1 left-1/2 flex h-4 w-8 -translate-x-1/2 items-center justify-center rounded bg-emerald-600">
+          <div className="absolute -bottom-1 left-1/2 flex h-5 w-10 -translate-x-1/2 items-center justify-center rounded bg-emerald-600">
             <span className="text-xs font-bold text-white">হালাল</span>
           </div>
         </div>
@@ -106,7 +110,7 @@ export const FeaturesSection = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white to-gray-50 p-8 text-center shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
+              className="group relative overflow-hidden rounded-lg bg-gradient-to-br from-white to-gray-50 p-8 text-center shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
               {/* Background gradient */}
               <div
