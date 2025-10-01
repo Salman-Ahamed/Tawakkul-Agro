@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-green-50 via-white to-green-100">
+    <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-green-50 via-white to-green-100 py-2.5">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-30">
         <div className="h-full w-full bg-[radial-gradient(circle_at_1px_1px,rgba(34,197,94,0.15)_1px,transparent_0)] bg-[length:20px_20px]"></div>
@@ -63,7 +63,7 @@ export const HeroSection = () => {
             <div className="flex flex-col justify-center gap-4 sm:flex-row lg:justify-start">
               <Link
                 href="/order"
-                className="group font-bengali flex rounded-md bg-green-600 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-200 hover:scale-105 hover:bg-green-700 hover:shadow-xl"
+                className="group font-bengali flex justify-center rounded-md bg-green-600 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-200 hover:scale-105 hover:bg-green-700 hover:shadow-xl"
               >
                 <span className="flex items-center justify-center">
                   অর্ডার করুন
