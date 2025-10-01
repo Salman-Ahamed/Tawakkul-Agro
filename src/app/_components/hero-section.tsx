@@ -63,7 +63,7 @@ export const HeroSection = () => {
             <div className="flex flex-col justify-center gap-4 sm:flex-row lg:justify-start">
               <Link
                 href="/order"
-                className="group font-bengali rounded-lg bg-green-600 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-200 hover:scale-105 hover:bg-green-700 hover:shadow-xl"
+                className="group font-bengali flex rounded-md bg-green-600 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-200 hover:scale-105 hover:bg-green-700 hover:shadow-xl"
               >
                 <span className="flex items-center justify-center">
                   অর্ডার করুন
@@ -84,7 +84,7 @@ export const HeroSection = () => {
               </Link>
               <Link
                 href="/products"
-                className="font-bengali rounded-lg border-2 border-green-600 px-8 py-4 text-lg font-semibold text-green-600 transition-all duration-200 hover:scale-105 hover:bg-green-600 hover:text-white"
+                className="font-bengali rounded-md border-2 border-green-600 px-8 py-4 text-lg font-semibold text-green-600 transition-all duration-200 hover:scale-105 hover:bg-green-600 hover:text-white"
               >
                 পণ্য দেখুন
               </Link>
